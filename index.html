@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro invitados</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+   <div class="container">
+       <h1 class="text-left" style="color: #f3f3f3;">Registro de Invitados</h1>
+       <div class="row">
+           <div class="col-md-12">
+               <form action="enviarcorreo.php" method="post">
+                   <ul class="contact-form">
+                       <li>
+                           <div class="col-md-6">
+                               <input type="text" name="nombre" placeholder="Escribe tu nombre" required="required" size="8">
+                           </div>
+                           <div class="col-md-6">
+                            <input type="text" name="apellido" placeholder="Escribe tu apellido" required="required" size="8">
+                        </div>
+                       </li>
+                       <li>
+                        <div class="col-md-6">
+                            <input type="text" name="usuario" placeholder="Escribe tu número de usuario" required="required" size="8">
+                        </div>
+                        <div class="col-md-6">
+                         <input type="email" name="email" placeholder="Escribe tu email" required="required" size="8">
+                     </div>
+                    </li>
+                    <li>
+                        <div class="col-md-12">
+                            <input type="text" name="asunto" required="required" size="8" placeholder="Asunto">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="col-md-12">
+                            <textarea name="mensaje" class="span12" placeholder="Escribe tu mensaje" required="required"></textarea>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="col-md-12">
+                            <button type="submit">Enviar mensaje <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></button>
+                        </div>
+                    </li>
+                   </ul>
+               </form>
+           </div>
+       </div>
+   </div>
+</body>
+
+</html>
